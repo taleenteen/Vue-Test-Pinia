@@ -46,15 +46,19 @@ const cancelDelete = () => {
             :key="index"
             class="hover:bg-gray-50"
           >
-            <td class="border-t px-4 py-2 text-center">
+            <td class="border-t border-b px-4 py-2 text-center">
               <img
                 class="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover"
                 :src="user.img"
               />
             </td>
-            <td class="border-t px-4 py-2 text-center">{{ user.name }}</td>
-            <td class="border-t px-4 py-2 text-center">{{ user.email }}</td>
-            <td class="border-t px-4 py-2 text-center">
+            <td class="border-t border-b px-4 py-2 text-center">
+              {{ user.name }}
+            </td>
+            <td class="border-t border-b px-4 py-2 text-center">
+              {{ user.email }}
+            </td>
+            <td class="border-t border-b px-4 py-2 text-center">
               <RouterLink :to="{ name: 'user-edit', params: { id: index } }">
                 <button
                   class="bg-blue-500 text-white rounded px-2 py-1 sm:px-4 sm:py-2 mr-2 hover:bg-blue-600"
