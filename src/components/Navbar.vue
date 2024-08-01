@@ -14,7 +14,7 @@ const toggleMenu = () => {
   >
     <div class="max-w-screen-xl flex items-center justify-between mx-auto p-4">
       <RouterLink
-        class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:hover:text-blue-500 text-white"
+        class="block py-2 px-3 rounded hover:text-blue-700 m md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:hover:text-blue-500 text-white"
         to="/"
         ><li class="pi pi-home text-white mx-5"></li>
         <span class="self-center text-2xl font-semibold whitespace-nowrap"
